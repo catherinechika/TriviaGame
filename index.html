@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel = "stylesheet" href="assets/css/reset.css">
+    <link rel = "stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+        <div class="jumbotron jumbotron-fluid top">
+                <div class="container">
+                    <h1 class="display-4 ">Hunger Games Trivia</h1>
+                    
+                    <p class="lead">To start game, click the start button below. If you need to take a break, cick the stop button below to pause the timer. Happy Trivia, may the odds be ever in your favor!</p>
+                    <button id = "startBtn"> Start Quiz</button>
+                    <button id = "endBtn"> Stop Quiz</button>
+                    <div class = "timer-text">
+                        <h1> 0 </h1>
+                    </div>
+                </div>
+            </div>
+ <div class="container">
+    <div class=" quiz">
+        
+        <div class="row"><h1>TRIVIA QUESTIONS</h1></div>
+        <div class="row answers "><p>
+                <div class="form-check form-check-inline wrong">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="wrong">
+                        <label class="form-check-label" for="inlineRadio1">1</label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="wrong">
+                        <label class="form-check-label" for="inlineRadio2">2</label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
+                        <label class="form-check-label" for="inlineRadio3">3 </label>
+                      </div>
+                      <div class="form-check form-check-inline right">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="right" >
+                            <label class="form-check-label" for="inlineRadio3">3 </label>
+                     </div>
+            </p>
+        </div>
+
+        <div class="row question "><p>1. Question 1</p></div>
+        <div class="row answers "><p>
+                <div class="form-check form-check-inline right">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="right">
+                        <label class="form-check-label" for="inlineRadio1">1</label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="wrong">
+                        <label class="form-check-label" for="inlineRadio2">2</label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
+                        <label class="form-check-label" for="inlineRadio3">3 </label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
+                            <label class="form-check-label" for="inlineRadio3">3 </label>
+                     </div>
+            </p>
+        </div>
+
+        <div class="row question "><p>1. Question 1</p></div>
+        <div class="row answers "><p>
+                <div class="form-check form-check-inline wrong">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="wrong">
+                        <label class="form-check-label" for="inlineRadio1">1</label>
+                      </div>
+                      <div class="form-check form-check-inline right">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="right">
+                        <label class="form-check-label" for="inlineRadio2">2</label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
+                        <label class="form-check-label" for="inlineRadio3">3 </label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
+                            <label class="form-check-label" for="inlineRadio3">3 </label>
+                     </div>
+            </p>
+        </div>
+
+        <div class="row question "><p>1. Question 1</p></div>
+        <div class="row answers "><p>
+                <div class="form-check form-check-inline wrong">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="wrong">
+                        <label class="form-check-label" for="inlineRadio1">1</label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="wrong">
+                        <label class="form-check-label" for="inlineRadio2">2</label>
+                      </div>
+                      <div class="form-check form-check-right">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="right" >
+                        <label class="form-check-label" for="inlineRadio3">3 </label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
+                            <label class="form-check-label" for="inlineRadio3">3 </label>
+                     </div>
+            </p>
+        </div>
+
+        <div class="row question "><p>1. Question 1</p></div>
+        <div class="row answers "><p>
+                <div class="form-check form-check-inline right">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="right">
+                        <label class="form-check-label" for="inlineRadio1">1</label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="wrong">
+                        <label class="form-check-label" for="inlineRadio2">2</label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
+                        <label class="form-check-label" for="inlineRadio3">3 </label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
+                            <label class="form-check-label" for="inlineRadio3">3 </label>
+                     </div>
+            </p>
+        </div>
+
+        <div class="row question "><p>1. Question 1</p></div>
+        <div class="row answers "><p>
+                <div class="form-check form-check-inline wrong">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="wrong">
+                        <label class="form-check-label" for="inlineRadio1">1</label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="wrong">
+                        <label class="form-check-label" for="inlineRadio2">2</label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
+                        <label class="form-check-label" for="inlineRadio3">3 </label>
+                      </div>
+                      <div class="form-check form-check-inline right">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="right" >
+                            <label class="form-check-label" for="inlineRadio3">3 </label>
+                     </div>
+            </p>
+        </div>
+
+        <div class="row question "><p>1. Question 1</p></div>
+        <div class="row answers "><p>
+                <div class="form-check form-check-inline wrong">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="wrong">
+                        <label class="form-check-label" for="inlineRadio1">1</label>
+                      </div>
+                      <div class="form-check form-check-inline right">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="right">
+                        <label class="form-check-label" for="inlineRadio2">2</label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
+                        <label class="form-check-label" for="inlineRadio3">3 </label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
+                            <label class="form-check-label" for="inlineRadio3">3 </label>
+                     </div>
+            </p>
+        </div>
+
+        <div class="row question "><p>1. Question 1</p></div>
+        <div class="row answers "><p>
+                <div class="form-check form-check-inline wrong">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="wrong">
+                        <label class="form-check-label" for="inlineRadio1">1</label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="wrong">
+                        <label class="form-check-label" for="inlineRadio2">2</label>
+                      </div>
+                      <div class="form-check form-check-right">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="right" >
+                        <label class="form-check-label" for="inlineRadio3">3 </label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
+                            <label class="form-check-label" for="inlineRadio3">3 </label>
+                     </div>
+            </p>
+        </div>
+
+        <div class="row question "><p>1. Question 1</p></div>
+        <div class="row answers "><p>
+                <div class="form-check form-check-inline wrong">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="wrong">
+                        <label class="form-check-label" for="inlineRadio1">1</label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="wrong">
+                        <label class="form-check-label" for="inlineRadio2">2</label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
+                        <label class="form-check-label" for="inlineRadio3">3 </label>
+                      </div>
+                      <div class="form-check form-check-inline right">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="right" >
+                            <label class="form-check-label" for="inlineRadio3">3 </label>
+                     </div>
+            </p>
+        </div>
+
+        <div class="row question "><p>1. Question 1</p></div>
+        <div class="row answers "><p>
+                <div class="form-check form-check-inline right">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="right">
+                        <label class="form-check-label" for="inlineRadio1">1</label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="wrong">
+                        <label class="form-check-label" for="inlineRadio2">2</label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
+                        <label class="form-check-label" for="inlineRadio3">3 </label>
+                      </div>
+                      <div class="form-check form-check-inline wrong">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
+                            <label class="form-check-label" for="inlineRadio3">3 </label>
+                     </div>
+            </p>
+        </div>
+<button class="submitBtn"> Submit Quiz</button>
+    </div>
+    <div class="container results">
+       <h1 class="row">All done!</h1>
+       <div class="row">
+           <p>Correct Answers: <div class = "numRight"></div></p>
+       </div>
+       <div class="row">
+           <p>Incorrect Answers: <div class = "numWrong"></div></p>
+       </div>
+       <div class="row">
+           <p>Unanwered: <div class = "numUns"></div></p>
+       </div>
+
+    </div>
+</div>
+    <script>
+        let count = 5
+        let quizStart = false
+        const timerText = $(".timer-text")
+        const startBtn = $("#startBtn")
+        let intId;
+        let status;
+        $(document).ready(function(){
+            $(".quiz").hide();
+            $(".results").hide();
+
+        
+        $("#startBtn").on("click", function (){intId = setInterval(counter, 1000)})
+        $("#endBtn").on("click", function (){clearInterval(intId); $(".quiz").hide();})
+
+        function counter(){
+            if (count>0){
+                count--
+                $(".quiz").show();
+                $(".timer-text").text(count)
+
+            }
+            else{
+                clearInterval(intId)
+                count = "Time is up!"
+                $(".timer-text").text(count)
+                status ="done"
+                $(".results").show();
+                $(".quiz").hide();
+                $(".numRight").text("results 1!")
+                $(".numWrong").text("results 2!")
+                $(".numUns").text("results 3")
+
+            }
+        }
+        for (i=0; i>=10; i++){
+            
+        }
+
+    })
+    // }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.top{
+    background: transparent;
+    opacity: 0.8;
+    text-align: center;
+
+}
+body{
+    background-image: url(../images/hg.jpg);
+    background-position: center; 
+}
+.topContent{
+    background-color: black;
+    /* opacity: 0.8; */
+    padding: 50px;
+    /* position: center; */
+    color: white;
+    border-radius: 25px;
+    font-family: 'Rock Salt', cursive;
+    line-height: 1.5;
+}
+
+.content{
+    background-color: black;
+    opacity: 0.8;
+    padding: 50px;
+    /* position: center; */
+    color: white;
+    border-radius: 25px;
+    line-height: 1.8;
+}
+
+
+.results{
+    text-align: center;
+}
+.timer-text{
+    font-size: 70px;
+}
+
+#startBtn{
+background: green;
+height: 50px;
+color: white;
+opacity: 1;
+}
+#endBtn{
+background: red;
+height: 50px;
+color: white;
+opacity: 1;
+}
+.huey{
+    margin: 20px;
+}
