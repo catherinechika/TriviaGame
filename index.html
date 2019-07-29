@@ -9,237 +9,280 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel = "stylesheet" href="assets/css/reset.css">
     <link rel = "stylesheet" href="assets/css/style.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt|Shadows+Into+Light+Two&display=swap" rel="stylesheet">
 </head>
 <body>
 
         <div class="jumbotron jumbotron-fluid top">
-                <div class="container">
+                <div class="container topContent">
                     <h1 class="display-4 ">Hunger Games Trivia</h1>
-                    
-                    <p class="lead">To start game, click the start button below. If you need to take a break, cick the stop button below to pause the timer. Happy Trivia, may the odds be ever in your favor!</p>
+                    <br>
+                    <p class="lead"><p><p>Welcome to the Arena!</p>To start game, click the "Start Quiz" button below.</p><p>If you need to take a break, cick the "Stop Quiz" button below to pause the timer.</p>  <p>Refresh page to play again.</p>  <p>Happy Trivia, may the odds be ever in your favor!</p></p>
                     <button id = "startBtn"> Start Quiz</button>
                     <button id = "endBtn"> Stop Quiz</button>
                     <div class = "timer-text">
                         <h1> 0 </h1>
                     </div>
                 </div>
-            </div>
- <div class="container">
+        </div>
+ <div class="container content">
     <div class=" quiz">
         
-        <div class="row"><h1>TRIVIA QUESTIONS</h1></div>
+        <div class="row"><h1>TRIVIA QUESTIONS Answers: 1) a, 2) c, 3) c, 4) b, 5) c, 6) b, 7) c, 8) a, 9) c, 10) c</h1></div>
+
+        <div class="row question "><p>1) Katniss is named after:</p></div>
         <div class="row answers "><p>
-                <div class="form-check form-check-inline wrong">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="wrong">
-                        <label class="form-check-label" for="inlineRadio1">1</label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="wrong">
-                        <label class="form-check-label" for="inlineRadio2">2</label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
-                        <label class="form-check-label" for="inlineRadio3">3 </label>
-                      </div>
-                      <div class="form-check form-check-inline right">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="right" >
-                            <label class="form-check-label" for="inlineRadio3">3 </label>
-                     </div>
-            </p>
+            <div>
+                <input type="radio" id="right" name="drone" value="huey" class = "test radio-inline huey">
+                <label for="huey">a) A plant</label>
+              </div>
+        
+              <div>
+                  <input type="radio" id="wrong" name="drone" value="huey" class = "test radio-inline huey">
+                  <label for="test">b) A bird</label>
+                </div>
+              
+              <div>
+                <input type="radio" id="wrong" name="drone" value="dewey" class = "test radio-inline huey">
+                <label for="dewey">c) A constellation</label>
+              </div>
+              
+              <div>
+                <input type="radio" id="wrong" name="drone" value="louie" class = "test radio-inline huey">
+                <label for="louie">d) I dont know</label>
+              </div>
+          </p>
         </div>
 
-        <div class="row question "><p>1. Question 1</p></div>
+        <div class="row question "><p>2) Which District do Katniss, Peeta, and Gale live in?</p></div>
         <div class="row answers "><p>
-                <div class="form-check form-check-inline right">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="right">
-                        <label class="form-check-label" for="inlineRadio1">1</label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="wrong">
-                        <label class="form-check-label" for="inlineRadio2">2</label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
-                        <label class="form-check-label" for="inlineRadio3">3 </label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
-                            <label class="form-check-label" for="inlineRadio3">3 </label>
-                     </div>
-            </p>
+            <div>
+                <input type="radio" id="wrong" name="test1" value="test2" class = "test3 huey">
+                <label for="huey">a) 10</label>
+              </div>
+        
+              <div>
+                  <input type="radio" id="wrong" name="test1" value="test2" class = "test3 huey">
+                  <label for="test">b) 11</label>
+                </div>
+              
+              <div>
+                <input type="radio" id="right" name="test1" value="test2" class = "test3 huey">
+                <label for="dewey">c) 12</label>
+              </div>
+              
+              <div>
+                <input type="radio" id="wrong" name="test1" value="test2" class = "test3 huey">
+                <label for="louie">c) 51</label>
+              </div>
+          </p>
         </div>
 
-        <div class="row question "><p>1. Question 1</p></div>
+
+        <div class="row question "><p>3) The contest known as the Hunger Games commemorates:</p></div>
         <div class="row answers "><p>
-                <div class="form-check form-check-inline wrong">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="wrong">
-                        <label class="form-check-label" for="inlineRadio1">1</label>
-                      </div>
-                      <div class="form-check form-check-inline right">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="right">
-                        <label class="form-check-label" for="inlineRadio2">2</label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
-                        <label class="form-check-label" for="inlineRadio3">3 </label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
-                            <label class="form-check-label" for="inlineRadio3">3 </label>
-                     </div>
-            </p>
+            <div>
+                <input type="radio" id="wrong" name="option1" value="option2" class = "option3 huey">
+                <label for="huey">a) The armistice between the Capitol and the District</label>
+              </div>
+        
+              <div>
+                  <input type="radio" id="wrong" name="option1" value="option2" class = "option3 huey">
+                  <label for="test">b) The District’s victory over the Capitol</label>
+                </div>
+              
+              <div>
+                <input type="radio" id="right" name="option1" value="option2" class = "option3 huey">
+                <label for="dewey">c) The Capitol’s victory over the Districts</label>
+              </div>
+              
+              <div>
+                <input type="radio" id="wrong" name="option1" value="option2" class = "option3 huey">
+                <label for="louie">d) The day we knew why the chicken crossed the road.</label>
+              </div>
+          </p>
         </div>
 
-        <div class="row question "><p>1. Question 1</p></div>
+        <div class="row question "><p>4) Peeta’s father is a:</p></div>
         <div class="row answers "><p>
-                <div class="form-check form-check-inline wrong">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="wrong">
-                        <label class="form-check-label" for="inlineRadio1">1</label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="wrong">
-                        <label class="form-check-label" for="inlineRadio2">2</label>
-                      </div>
-                      <div class="form-check form-check-right">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="right" >
-                        <label class="form-check-label" for="inlineRadio3">3 </label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
-                            <label class="form-check-label" for="inlineRadio3">3 </label>
-                     </div>
-            </p>
+            <div>
+                <input type="radio" id="wrong" name="skill1" value="skill2" class = "skill3 huey">
+                <label for="huey">a) Miner</label>
+              </div>
+        
+              <div>
+                  <input type="radio" id="right" name="skill1" value="skill2" class = "skill3 huey">
+                  <label for="test">b) Baker</label>
+                </div>
+              
+              <div>
+                <input type="radio" id="wrong" name="skill1" value="skill2" class = "skill3 huey">
+                <label for="dewey">c) Hunter</label>
+              </div>
+              
+              <div>
+                <input type="radio" id="wrong" name="skill1" value="skill2" class = "skill3 huey">
+                <label for="louie">d) Judge</label>
+              </div>
+          </p>
+        </div>
+         
+       
+        <div class="row question "><p>5) Katniss’ and Peeta’s mentor is:</p></div>
+        <div class="row answers "><p>
+            <div>
+                <input type="radio" id="wrong" name="slay1" value="slay2" class = "slay3 huey">
+                <label for="huey">a) Gale Hawthorne</label>
+              </div>
+        
+              <div>
+                  <input type="radio" id="wrong" name="slay1" value="slay2" class = "slay3 huey">
+                  <label for="test">b) Effie Trinket</label>
+                </div>
+              
+              <div>
+                <input type="radio" id="right" name="slay1" value="slay2" class = "slay3 huey">
+                <label for="dewey">c) Haymitch Abernathy</label>
+              </div>
+              
+              <div>
+                <input type="radio" id="wrong" name="slay1" value="slay2" class = "slay3 huey">
+                <label for="louie">d) Elon Musk</label>
+              </div>
+          </p>
+        </div>
+          
+
+        <div class="row question "><p>6) Which poisonous berries result in a tribute’s death?</p></div>
+        <div class="row answers "><p>
+            <div>
+                <input type="radio" id="wrong" name="ice1" value="ice2" class = "ice3 huey">
+                <label for="huey">a) Nightshadow</label>
+              </div>
+        
+              <div>
+                  <input type="radio" id="right" name="ice1" value="ice2" class = "ice3 huey">
+                  <label for="test">b) Nightlock</label>
+                </div>
+              
+              <div>
+                <input type="radio" id="wrong" name="ice1" value="ice2" class = "ice3 huey">
+                <label for="dewey">c) Nightshade</label>
+              </div>
+              
+              <div>
+                <input type="radio" id="wrong" name="ice1" value="ice2" class = "ice3 huey">
+                <label for="louie">d) Nightwalker</label>
+              </div>
+          </p>
         </div>
 
-        <div class="row question "><p>1. Question 1</p></div>
+
+        <div class="row question "><p>7) What is the name of the day when Hunger Games tributes are chosen?</p></div>
         <div class="row answers "><p>
-                <div class="form-check form-check-inline right">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="right">
-                        <label class="form-check-label" for="inlineRadio1">1</label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="wrong">
-                        <label class="form-check-label" for="inlineRadio2">2</label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
-                        <label class="form-check-label" for="inlineRadio3">3 </label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
-                            <label class="form-check-label" for="inlineRadio3">3 </label>
-                     </div>
-            </p>
+            <div>
+                <input type="radio" id="wrong" name="bounce1" value="bounce2" class = "bounce3 huey">
+                <label for="huey">a) Harvesting Day</label>
+              </div>
+        
+              <div>
+                  <input type="radio" id="wrong" name="bounce1" value="bounce2" class = "bounce3 huey">
+                  <label for="test">b) Threshing Day</label>
+                </div>
+              
+              <div>
+                <input type="radio" id="right" name="bounce1" value="bounce2" class = "bounce3 huey">
+                <label for="dewey">c) Reaping Day</label>
+              </div>
+              
+              <div>
+                <input type="radio" id="wrong" name="bounce1" value="bounce2" class = "bounce3 huey">
+                <label for="louie">d) Slacking Day</label>
+              </div>
+        </p>
         </div>
 
-        <div class="row question "><p>1. Question 1</p></div>
+
+        <div class="row question "><p>8) Finnick Odair competes in the 75th Hunger Games. What is his weapon of choice?</p></div>
         <div class="row answers "><p>
-                <div class="form-check form-check-inline wrong">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="wrong">
-                        <label class="form-check-label" for="inlineRadio1">1</label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="wrong">
-                        <label class="form-check-label" for="inlineRadio2">2</label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
-                        <label class="form-check-label" for="inlineRadio3">3 </label>
-                      </div>
-                      <div class="form-check form-check-inline right">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="right" >
-                            <label class="form-check-label" for="inlineRadio3">3 </label>
-                     </div>
-            </p>
+            <div>
+                <input type="radio" id="right" name="dance1" value="dance2" class = "dance3 huey">
+                <label for="huey">a) A trident</label>
+              </div>
+        
+              <div>
+                  <input type="radio" id="wrong" name="dance1" value="dance2" class = "dance3 huey">
+                  <label for="test">b) A scimitar</label>
+                </div>
+              
+              <div>
+                <input type="radio" id="wrong" name="dance1" value="dance2" class = "dance3 huey">
+                <label for="dewey">c) A lasso</label>
+              </div>
+              
+              <div>
+                <input type="radio" id="wrong" name="dance1" value="dance2" class = "dance3 huey">
+                <label for="louie">d) An Axe</label>
+              </div>
+        </p>
         </div>
 
-        <div class="row question "><p>1. Question 1</p></div>
+
+        <div class="row question "><p>9) What is an avox?</p></div>
         <div class="row answers "><p>
-                <div class="form-check form-check-inline wrong">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="wrong">
-                        <label class="form-check-label" for="inlineRadio1">1</label>
-                      </div>
-                      <div class="form-check form-check-inline right">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="right">
-                        <label class="form-check-label" for="inlineRadio2">2</label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
-                        <label class="form-check-label" for="inlineRadio3">3 </label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
-                            <label class="form-check-label" for="inlineRadio3">3 </label>
-                     </div>
-            </p>
+            <div>
+                <input type="radio" id="wrong" name="bike1" value="bike2" class = "bike3 huey">
+                <label for="huey">a) A servant whose mouth has been glued shut</label>
+              </div>
+        
+              <div>
+                  <input type="radio" id="wrong" name="bike1" value="bike2" class = "bike3 huey">
+                  <label for="test">b) A servant who is forced to wear a bag over his/her head</label>
+                </div>
+              
+              <div>
+                <input type="radio" id="right" name="bike1" value="bike2" class = "bike3 huey">
+                <label for="dewey">c) A servant whose tongue has been cut out</label>
+              </div>
+              
+              <div>
+                <input type="radio" id="wrong" name="bike1" value="bike2" class = "bike3 huey">
+                <label for="louie">d) A servant whose wears no shoes</label>
+              </div>
+        </p>
         </div>
 
-        <div class="row question "><p>1. Question 1</p></div>
+        
+        <div class="row question "><p>10) What is District 13?</p></div>
         <div class="row answers "><p>
-                <div class="form-check form-check-inline wrong">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="wrong">
-                        <label class="form-check-label" for="inlineRadio1">1</label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="wrong">
-                        <label class="form-check-label" for="inlineRadio2">2</label>
-                      </div>
-                      <div class="form-check form-check-right">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="right" >
-                        <label class="form-check-label" for="inlineRadio3">3 </label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
-                            <label class="form-check-label" for="inlineRadio3">3 </label>
-                     </div>
-            </p>
-        </div>
 
-        <div class="row question "><p>1. Question 1</p></div>
-        <div class="row answers "><p>
-                <div class="form-check form-check-inline wrong">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="wrong">
-                        <label class="form-check-label" for="inlineRadio1">1</label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="wrong">
-                        <label class="form-check-label" for="inlineRadio2">2</label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
-                        <label class="form-check-label" for="inlineRadio3">3 </label>
-                      </div>
-                      <div class="form-check form-check-inline right">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="right" >
-                            <label class="form-check-label" for="inlineRadio3">3 </label>
-                     </div>
-            </p>
-        </div>
+        <div>
+            <input type="radio" id="wrong" name="hail1" value="hail2" class = "hail3 huey">
+            <label for="huey">a) A District that is reported to be uninhabitable</label>
+          </div>
+    
+          <div>
+              <input type="radio" id="wrong" name="hail1" value="hail2" class = "hail3 huey">
+              <label for="test">b) A District outside of the Capitol’s control</label>
+            </div>
+          
+          <div>
+            <input type="radio" id="right" name="hail1" value="hail2" class = "hail3 huey">
+            <label for="dewey">c) Both a) and b)</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="wrong" name="hail1" value="hail2" class = "hail3 huey">
+            <label for="louie">d) Neither a) nor b)</label>
+          </div>
+    </p>
+    </div>
 
-        <div class="row question "><p>1. Question 1</p></div>
-        <div class="row answers "><p>
-                <div class="form-check form-check-inline right">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="right">
-                        <label class="form-check-label" for="inlineRadio1">1</label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="wrong">
-                        <label class="form-check-label" for="inlineRadio2">2</label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
-                        <label class="form-check-label" for="inlineRadio3">3 </label>
-                      </div>
-                      <div class="form-check form-check-inline wrong">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="wrong" >
-                            <label class="form-check-label" for="inlineRadio3">3 </label>
-                     </div>
-            </p>
-        </div>
+
+
 <button class="submitBtn"> Submit Quiz</button>
     </div>
-    <div class="container results">
+    <div class="results">
        <h1 class="row">All done!</h1>
        <div class="row">
            <p>Correct Answers: <div class = "numRight"></div></p>
@@ -254,26 +297,63 @@
     </div>
 </div>
     <script>
-        let count = 5
-        let quizStart = false
+        let numRight = 0;
+        let numWrong = 0;
+        let numUns = 0;
+        let count = 120;
+        let quizStart = false;
         const timerText = $(".timer-text")
         const startBtn = $("#startBtn")
         let intId;
         let status;
         $(document).ready(function(){
+// Hiding the questions until player is ready to start the quiz
+            $(".content").hide();
             $(".quiz").hide();
             $(".results").hide();
+// Start the time when the start quiz button is clicked
+            $("#startBtn").on("click", function (){
+              intId = setInterval(counter, 1000)})
+// stop the time when the stop quiz button is clicked
+            $("#endBtn").on("click", function (){
+              clearInterval(intId); $(".quiz").hide();})
 
-        
-        $("#startBtn").on("click", function (){intId = setInterval(counter, 1000)})
-        $("#endBtn").on("click", function (){clearInterval(intId); $(".quiz").hide();})
+// Function to account for when the right box is checked
+            $('input[id = "right"]').click(function(){
+            if($(this).prop("checked") == true){
+                numRight++
+            }
+          });
 
+ // Function to account for when the wrong box is checked
+            $('input[id = "wrong"]').click(function(){
+            if($(this).prop("checked") == true){
+                numWrong++
+            }
+            });
+// to account for when no box is checked
+
+// Function for the submit button
+            $(".submitBtn").on("click", function(){
+              clearInterval(intId)
+                count = "Quiz is done"
+                $(".timer-text").text(count)
+                status ="done"
+                $(".results").show();
+                $(".quiz").hide();
+                numUns= 10-(numRight+numWrong)
+                $(".numRight").text(numRight)
+                $(".numWrong").text(numWrong)
+                $(".numUns").text(numUns)
+              })
+
+// Function to increment the timer and the keep count of the results
         function counter(){
             if (count>0){
                 count--
                 $(".quiz").show();
+                $(".content").show();
                 $(".timer-text").text(count)
-
             }
             else{
                 clearInterval(intId)
@@ -282,15 +362,13 @@
                 status ="done"
                 $(".results").show();
                 $(".quiz").hide();
-                $(".numRight").text("results 1!")
-                $(".numWrong").text("results 2!")
-                $(".numUns").text("results 3")
-
+                numUns= 10-(numRight+numWrong)
+                $(".numRight").text(numRight)
+                $(".numWrong").text(numWrong)
+                $(".numUns").text(numUns)
             }
         }
-        for (i=0; i>=10; i++){
-            
-        }
+        
 
     })
     // }

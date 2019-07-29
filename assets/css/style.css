@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+.container{
+    text-align: center;
+
+}
 .top{
     background: transparent;
     opacity: 0.8;
@@ -12,9 +16,7 @@ body{
 }
 .topContent{
     background-color: black;
-    /* opacity: 0.8; */
     padding: 50px;
-    /* position: center; */
     color: white;
     border-radius: 25px;
     font-family: 'Rock Salt', cursive;
@@ -25,15 +27,18 @@ body{
     background-color: black;
     opacity: 0.8;
     padding: 50px;
-    /* position: center; */
     color: white;
     border-radius: 25px;
     line-height: 1.8;
+    font-family: 'Shadows Into Light Two', cursive;
 }
 
 
 .results{
     text-align: center;
+    font-size: 30px;
+    margin-left: 50px;
+
 }
 .timer-text{
     font-size: 70px;
@@ -50,6 +55,13 @@ background: red;
 height: 50px;
 color: white;
 opacity: 1;
+}
+.submitBtn{
+    background: yellow;
+    height: 50px;
+    text-align: center;
+
+
 }
 .huey{
     margin: 20px;
