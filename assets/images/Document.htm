@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)file:///Users/catherineachukwu/bootcamp/Orange-Team-Project-1/timer.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./Document_files/jquery.min.js"></script>
+
+</head>
+<body>
+        <div class="timer">
+            <h1 class="time"> <span class="min">29</span> <span class="sec">:08</span> </h1>
+                
+
+
+        <select class="meditationTime">
+                <option value="60">60 Minutes</option>
+                <option value="50">50 Minutes</option>
+                <option value="40">40 Minutes</option>
+                <option value="30">30 Minutes</option>
+                <option value="20">20 Minutes</option>
+                <option value="15">15 Minutes</option>
+                <option value="10">10 Minutes</option>
+                <option value="2">5 Minutes</option>
+              </select>
+<button class="start">Start Meditation</button>
+        </div>
+        <script>
+
+$(document).ready(function() {
+    let secondCnt= 10
+    $('.meditationTime').change(function() {
+        var userSelect = $(this).val()
+          var  selectedTime = userSelect -1
+            $(".min").text(selectedTime)
+
+    $(".start").on("click", function(){
+            console.log ("good to go!")
+      
+            intId = setInterval(function(){
+
+                if (selectedTime>0){
+                    selectedTime--
+                    $(".min").text(selectedTime)
+  
+                } else {
+                    clearInterval(intId)
+                    $(".min").text(selectedTime)
+                    selectedTime--
+
+                }
+                }
+                 , 10000)
+     
+                });            
+
+
+             secIntId = setInterval(function(){
+
+                if (selectedTime>-1 && secondCnt>0){
+                    console.log(secondCnt)
+                    secondCnt--
+                    
+                   
+                    if (secondCnt<10) {                   
+                    $(".sec").text(":0"+ secondCnt)
+                    }else{
+                    $(".sec").text(":"+ secondCnt)
+                    }
+                } else  {
+                    secondCnt= 10
+                    secondCnt--
+                    console.log(secondCnt + "new")
+
+                    $(".sec").text(":"+ secondCnt)
+                }
+
+                }
+               
+
+            , 1000)
+
+           
+       });
+    });
+                // var  clockrunning = false
+                // var minute = $(".userTime").val()
+              
+
+// // Start the time when the start meditation button is clicked
+
+// // Minute interval countdown
+
+//                 minute = $(".userTime").val() === '' ? '00' : $(".userTime").val()
+//                 $(".mins").text(minute)
+//                 intId = setInterval(function(){
+
+//                 if (minute>-1){
+//                     minute--
+//                     $(".mins").text(minute)
+  
+//                 } else {
+//                     clearInterval(intId)}
+//                 }
+//                  , 60000)
+// // Second interval countdown
+
+//                 // second = 59
+//                 secIntv = setInterval(function(){
+//                     if (minute > 0)
+//                     if (second>-1){
+//                         second--
+//                         console.log(second)
+//                         $(".sec").text(second)
+//                     } else {
+//                     clearInterval(secIntv)
+//                     if (minute > 0)
+//                     second = 60
+//                     $(".sec").text(second)
+//                 }
+//                 }
+//                 , 1000)
+                
+//                 //   clockrunning = true
+//             })
+     
+                
+        </script>
+     
+
+</body></html>
