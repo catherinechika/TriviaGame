@@ -15,7 +15,8 @@ $(document).ready(function () {
     // Start the time when the start quiz button is clicked
     $("#startBtn").on("click", function () {
         intId = setInterval(counter, 1000)
-        $(".results").hide();
+        $(".steps").hide();
+        $("#startBtn").hide();
     })
     // stop the time when the stop quiz button is clicked
     $("#endBtn").on("click", function () {
